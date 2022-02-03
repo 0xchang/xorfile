@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1638372600 source:d:\workspace\cproject\xorfile\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+
