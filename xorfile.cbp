@@ -31,9 +31,17 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="arguments.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="arguments.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="xor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="xor.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

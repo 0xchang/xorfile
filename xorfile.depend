@@ -1,7 +1,32 @@
 # depslib dependency file v1.0
-1638372600 source:d:\workspace\cproject\xorfile\main.c
+1644245757 source:d:\workspace\cproject\xorfile\main.c
 	<stdio.h>
 	<stdlib.h>
-	<string.h>
 	<time.h>
+	"arguments.h"
+	"xor.h"
+
+1644235400 source:d:\workspace\cproject\xorfile\arguments.c
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	<stdlib.h>
+	"arguments.h"
+
+1644161019 d:\workspace\cproject\xorfile\arguments.h
+
+1644143455 d:\workspace\cproject\xorfile\arguments.c
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	<stdlib.h>
+	"arguments.h"
+
+1644244101 source:d:\workspace\cproject\xorfile\xor.c
+	<stdio.h>
+	<stdlib.h>
+	"xor.h"
+	"arguments.h"
+
+1644157847 d:\workspace\cproject\xorfile\xor.h
 
