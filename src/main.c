@@ -2,11 +2,11 @@
 // time: 2022/2/7
 // author: 0xchang
 #include <stdio.h>
-#include<stdlib.h>
+#include <stdlib.h>
 #include <time.h>
 
-#include "arguments.h"
-#include "xor.h"
+#include "../include/arguments.h"
+#include "../include/xor.h"
 
 int main(const int argc,const char * argv[])
 {
@@ -16,6 +16,6 @@ int main(const int argc,const char * argv[])
     para(argc,argv);
     size_n=xor_file();
     end=clock();
-    printf("Time: %dms\nOut file: %s\nFile size:%d Bytes\n",end-begin,file_name3,size_n);
+    printf("Time: %dms\nOut file: %s\nFile size:%d Bytes\nDone!",end-begin,file_name3,size_n);
     return 0;
 }

@@ -1,9 +1,9 @@
 # xorfile
 
-#### 介绍
-用c语言写的简单文件异或小工具。
+#### Description
+A simple file XOR gadget written in C language.
 
-#### 软件架构
+#### Software Architecture
 ```shell
 .
 ├── bin
@@ -22,19 +22,18 @@
 
 
 
+#### Installation
 
-#### 安装教程
-
-1.  make
+1.  xxxx
 2.  ./bin/xorfile -h
 
-#### 使用说明
+#### Instructions
 
 1.  xorfile -h
 
-#### 参与贡献
+#### Contribution
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+1.  Fork the repository
+2.  Create Feat_xxx branch
+3.  Commit your code
+4.  Create Pull Request

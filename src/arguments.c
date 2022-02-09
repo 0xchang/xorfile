@@ -1,14 +1,14 @@
-#include<stdio.h>
-#include<string.h>
-#include<ctype.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+#include <stdlib.h>
 
-#include "arguments.h"
-#define FILE3 "file.xor"
+#include "../include/arguments.h"
+
 
 unsigned int n=0;
 unsigned short int min=0,max=0;
-char * file_name1=NULL,* file_name2=NULL,* file_name3=NULL;
+char file_name1[255]={0}, file_name2[255]={0}, file_name3[255]={0};
 
 
 void error()
@@ -46,19 +46,16 @@ int para(const int argc,const char * argv[])
         else if(strcmp("-i1",argv[i])==0)
         {
             ++i<argc?i:error();
-            file_name1=(char *)malloc(sizeof(char)*(strlen(argv[i])+1));
             strcpy(file_name1,argv[i]);
         }
         else if(strcmp("-i2",argv[i])==0)
         {
             ++i<argc?i:error();
-            file_name2=(char *)malloc(sizeof(char)*(strlen(argv[i])+1));
             strcpy(file_name2,argv[i]);
         }
         else if(strcmp("-o",argv[i])==0||strcmp("--output",argv[i])==0)
         {
             ++i<argc?i:error();
-            file_name3=(char *)malloc(sizeof(char)*(strlen(argv[i])+1));
             strcpy(file_name3,argv[i]);
         }
         else if(strcmp("-min",argv[i])==0&&max==0)
@@ -76,7 +73,7 @@ int para(const int argc,const char * argv[])
         }
     }
     if(file_name1==NULL||file_name2==NULL) error();
-    if(file_name3==NULL) file_name3=(char *)malloc(sizeof(char)*(strlen(FILE3)+1)),strcpy(file_name3,FILE3);
+    if(file_name3[0]=='\0') strcpy(file_name3,FILE3);
     fflush(stdin);
     return 0;
 }
