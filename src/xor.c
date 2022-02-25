@@ -42,7 +42,7 @@ unsigned int xor_file()
         if(small==len1) for(;i<file_size;i++) buf3[i]=buf2[i];
         else for(;i<file_size;i++) buf3[i]=buf1[i];
     }
-    else
+    else if (file_size > large)
     {
         if(small==len1) for(;i<large;i++) buf3[i]=buf2[i];
         else for(;i<large;i++) buf3[i]=buf1[i];
