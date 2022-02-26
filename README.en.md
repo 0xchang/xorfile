@@ -11,13 +11,20 @@ A simple file XOR gadget written in C language.
 ├── include
 │   ├── arguments.h
 │   └── xor.h
+├── LICENSE
 ├── Makefile
-└── src
-    ├── arguments.c
-    ├── main.c
-    └── xor.c
+├── obj
+├── README.en.md
+├── README.md
+├── src
+│   ├── arguments.c
+│   ├── main.c
+│   └── xor.c
+├── xorfile.cbp
+├── xorfile.depend
+└── xorfile.layout
 
-3 directories, 7 files
+4 directories, 13 files
 ```
 
 
