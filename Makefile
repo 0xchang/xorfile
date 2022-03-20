@@ -1,13 +1,10 @@
 xorfile:arguments.o xor.o main.o
-	@gcc -o bin/xorfile obj/main.o obj/arguments.o obj/xor.o -O2
-	@echo "The out file is bin/xorfile"
+	gcc -o xorfile main.o getopt.o xor.o -O2
+	rm -rf *.o
+	@echo "The out file is xorfile"
 main.o:
-	@gcc src/main.c -c -o obj/main.o
+	@gcc main.c -c -o main.o
 arguments.o:
-	@gcc src/arguments.c -c -o obj/arguments.o
+	@gcc getopt.c -c -o getopt.o
 xor.o:
-	@gcc src/xor.c -c -o obj/xor.o
-clean:
-	rm -rf obj/*
-clean_all:
-	rm -rf bin/* obj/*
+	@gcc xor.c -c -o xor.o

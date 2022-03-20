@@ -6,20 +6,44 @@
 	<stdlib.h>
 	"../include/arguments.h"
 
-1645800888 d:\workspace\cproject\xorfile\include\arguments.h
+1645872982 d:\workspace\cproject\xorfile\include\arguments.h
 
-1645801544 source:d:\workspace\cproject\xorfile\src\main.c
+1646139707 source:d:\workspace\cproject\xorfile\src\main.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 	"../include/arguments.h"
 	"../include/xor.h"
 
-1645800888 d:\workspace\cproject\xorfile\include\xor.h
+1645872982 d:\workspace\cproject\xorfile\include\xor.h
 
-1645800807 source:d:\workspace\cproject\xorfile\src\xor.c
+1646139707 source:d:\workspace\cproject\xorfile\src\xor.c
 	<stdio.h>
 	<stdlib.h>
 	"../include/xor.h"
 	"../include/arguments.h"
+
+1647789246 source:d:\workspace\cproject\xorfile\getopt.c
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	<stdlib.h>
+	"getopt.h"
+
+1645872982 d:\workspace\cproject\xorfile\getopt.h
+
+1647789246 source:d:\workspace\cproject\xorfile\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"getopt.h"
+	"xor.h"
+
+1645872982 d:\workspace\cproject\xorfile\xor.h
+
+1647789246 source:d:\workspace\cproject\xorfile\xor.c
+	<stdio.h>
+	<stdlib.h>
+	"xor.h"
+	"getopt.h"
 

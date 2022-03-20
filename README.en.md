@@ -6,23 +6,22 @@ A simple file XOR gadget written in C language.
 #### Software Architecture
 ```shell
 .
-├── bin
-│   └── xorfile
-├── include
-│   ├── arguments.h
-│   └── xor.h
-├── LICENSE
-├── Makefile
-├── obj
-├── README.en.md
-├── README.md
-├── src
-│   ├── arguments.c
-│   ├── main.c
-│   └── xor.c
-├── xorfile.cbp
-├── xorfile.depend
-└── xorfile.layout
++--- bin
+|   +--- Release
++--- getopt.c
++--- getopt.h
++--- LICENSE
++--- main.c
++--- Makefile
++--- obj
+|   +--- Release
++--- README.en.md
++--- README.md
++--- xor.c
++--- xor.h
++--- xorfile.cbp
++--- xorfile.depend
++--- xorfile.layout
 
 4 directories, 13 files
 ```
@@ -31,8 +30,8 @@ A simple file XOR gadget written in C language.
 
 #### Installation
 
-1.  xxxx
-2.  ./bin/xorfile -h
+1.  make
+2.  ./xorfile -h
 
 #### Instructions
 

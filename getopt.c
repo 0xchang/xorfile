@@ -3,7 +3,7 @@
 #include <ctype.h>
 #include <stdlib.h>
 
-#include "../include/arguments.h"
+#include "getopt.h"
 
 
 unsigned int n=0;
@@ -74,6 +74,7 @@ int para(const int argc,const char * argv[])
     }
     if(file_name1==NULL||file_name2==NULL) error();
     if(file_name3[0]=='\0') strcpy(file_name3,FILE3);
+    if(strcmp(file_name1,file_name3)==0||strcmp(file_name2,file_name3)==0){printf("The input file name and output file name are duplicate. Please modify the file name.\n");exit(1);}
     fflush(stdin);
     return 0;
 }

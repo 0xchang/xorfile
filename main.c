@@ -1,12 +1,12 @@
-// version: 1.0.1
+// version: 1.0.2
 // time: 2022/2/7
 // author: 0xchang
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
-#include "../include/arguments.h"
-#include "../include/xor.h"
+#include "getopt.h"
+#include "xor.h"
 
 int main(const int argc,const char * argv[])
 {
